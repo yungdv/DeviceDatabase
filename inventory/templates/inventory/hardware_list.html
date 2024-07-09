@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hardware List</title>
+</head>
+<body>
+    <h1>Hardware List</h1>
+    <ul>
+    {% for item in hardware %}
+        <li>{{ item.sn }} - {{ item.model.name }} - {{ item.model.equipment_type.name }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
